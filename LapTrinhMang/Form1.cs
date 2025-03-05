@@ -37,5 +37,19 @@ namespace LapTrinhMang
             f4.Show();
             this.Hide();
         }
+
+        private void lab4_Click(object sender, EventArgs e)
+        {
+            Form5 f5 = new Form5(this);
+            f5.Show();
+            this.Hide();
+        }
+
+        private void lab5_Click(object sender, EventArgs e)
+        {
+            Form6 f6 = new Form6(this);
+            f6.Show();
+            this.Hide();
+        }
     }
 }

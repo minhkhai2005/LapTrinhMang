@@ -56,10 +56,11 @@
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel3, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(537, 300);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1074, 577);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // tableLayoutPanel2
@@ -70,7 +71,8 @@
             this.tableLayoutPanel2.Controls.Add(this.clearButton, 0, 2);
             this.tableLayoutPanel2.Controls.Add(this.closeButton, 0, 3);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(375, 3);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(750, 6);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 6;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
@@ -79,18 +81,18 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(159, 294);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(318, 565);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // readButton
             // 
             this.readButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.readButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.readButton.Location = new System.Drawing.Point(20, 69);
-            this.readButton.Margin = new System.Windows.Forms.Padding(20);
-            this.readButton.MinimumSize = new System.Drawing.Size(50, 25);
+            this.readButton.Location = new System.Drawing.Point(40, 132);
+            this.readButton.Margin = new System.Windows.Forms.Padding(40, 38, 40, 38);
+            this.readButton.MinimumSize = new System.Drawing.Size(100, 48);
             this.readButton.Name = "readButton";
-            this.readButton.Size = new System.Drawing.Size(119, 25);
+            this.readButton.Size = new System.Drawing.Size(238, 48);
             this.readButton.TabIndex = 0;
             this.readButton.Text = "Đọc ";
             this.readButton.UseVisualStyleBackColor = true;
@@ -100,27 +102,29 @@
             // 
             this.clearButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.clearButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.clearButton.Location = new System.Drawing.Point(20, 118);
-            this.clearButton.Margin = new System.Windows.Forms.Padding(20);
-            this.clearButton.MinimumSize = new System.Drawing.Size(50, 25);
+            this.clearButton.Location = new System.Drawing.Point(40, 226);
+            this.clearButton.Margin = new System.Windows.Forms.Padding(40, 38, 40, 38);
+            this.clearButton.MinimumSize = new System.Drawing.Size(100, 48);
             this.clearButton.Name = "clearButton";
-            this.clearButton.Size = new System.Drawing.Size(119, 25);
+            this.clearButton.Size = new System.Drawing.Size(238, 48);
             this.clearButton.TabIndex = 1;
             this.clearButton.Text = "Xoá";
             this.clearButton.UseVisualStyleBackColor = true;
+            this.clearButton.Click += new System.EventHandler(this.clearButton_Click);
             // 
             // closeButton
             // 
             this.closeButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.closeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.closeButton.Location = new System.Drawing.Point(20, 167);
-            this.closeButton.Margin = new System.Windows.Forms.Padding(20);
-            this.closeButton.MinimumSize = new System.Drawing.Size(50, 25);
+            this.closeButton.Location = new System.Drawing.Point(40, 320);
+            this.closeButton.Margin = new System.Windows.Forms.Padding(40, 38, 40, 38);
+            this.closeButton.MinimumSize = new System.Drawing.Size(100, 48);
             this.closeButton.Name = "closeButton";
-            this.closeButton.Size = new System.Drawing.Size(119, 25);
+            this.closeButton.Size = new System.Drawing.Size(238, 48);
             this.closeButton.TabIndex = 2;
             this.closeButton.Text = "Thoát";
             this.closeButton.UseVisualStyleBackColor = true;
+            this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
             // 
             // tableLayoutPanel3
             // 
@@ -129,12 +133,13 @@
             this.tableLayoutPanel3.Controls.Add(this.flowLayoutPanel1, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.flowLayoutPanel2, 0, 1);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(6, 6);
+            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 2;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(366, 294);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(732, 565);
             this.tableLayoutPanel3.TabIndex = 1;
             // 
             // flowLayoutPanel1
@@ -142,10 +147,11 @@
             this.flowLayoutPanel1.Controls.Add(this.label1);
             this.flowLayoutPanel1.Controls.Add(this.textBox1);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 3);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(6, 6);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(0, 30, 0, 0);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(360, 141);
+            this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(0, 58, 0, 0);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(720, 270);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
             // label1
@@ -153,9 +159,10 @@
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(3, 33);
+            this.label1.Location = new System.Drawing.Point(6, 61);
+            this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(228, 20);
+            this.label1.Size = new System.Drawing.Size(464, 37);
             this.label1.TabIndex = 0;
             this.label1.Text = "Nhập vào số nguyên từ 0 đến 9";
             // 
@@ -163,9 +170,10 @@
             // 
             this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Location = new System.Drawing.Point(237, 33);
+            this.textBox1.Location = new System.Drawing.Point(482, 64);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(88, 20);
+            this.textBox1.Size = new System.Drawing.Size(174, 31);
             this.textBox1.TabIndex = 1;
             // 
             // flowLayoutPanel2
@@ -174,19 +182,20 @@
             this.flowLayoutPanel2.Controls.Add(this.textBox2);
             this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel2.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(3, 150);
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(6, 288);
+            this.flowLayoutPanel2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(360, 141);
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(720, 271);
             this.flowLayoutPanel2.TabIndex = 1;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(3, 10);
-            this.label2.Margin = new System.Windows.Forms.Padding(3, 10, 3, 10);
+            this.label2.Location = new System.Drawing.Point(6, 19);
+            this.label2.Margin = new System.Windows.Forms.Padding(6, 19, 6, 19);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(58, 18);
+            this.label2.Size = new System.Drawing.Size(117, 36);
             this.label2.TabIndex = 0;
             this.label2.Text = "Kết quả";
             // 
@@ -194,17 +203,19 @@
             // 
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox2.Enabled = false;
-            this.textBox2.Location = new System.Drawing.Point(3, 41);
+            this.textBox2.Location = new System.Drawing.Point(6, 80);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(194, 20);
+            this.textBox2.Size = new System.Drawing.Size(386, 31);
             this.textBox2.TabIndex = 1;
             // 
             // Form4
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(537, 300);
+            this.ClientSize = new System.Drawing.Size(1074, 577);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "Form4";
             this.Text = "Form4";
             this.Load += new System.EventHandler(this.Form4_Load);

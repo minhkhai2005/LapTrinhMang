@@ -49,7 +49,7 @@
             this.tableLayoutPanel1.Controls.Add(this.lab1, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
@@ -69,6 +69,7 @@
             this.lab5.TabIndex = 4;
             this.lab5.Text = "Bai 5";
             this.lab5.UseVisualStyleBackColor = true;
+            this.lab5.Click += new System.EventHandler(this.lab5_Click);
             // 
             // lab4
             // 
@@ -81,6 +82,7 @@
             this.lab4.TabIndex = 3;
             this.lab4.Text = "Bai 4";
             this.lab4.UseVisualStyleBackColor = true;
+            this.lab4.Click += new System.EventHandler(this.lab4_Click);
             // 
             // lab3
             // 
@@ -127,7 +129,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(463, 358);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.tableLayoutPanel1.ResumeLayout(false);
